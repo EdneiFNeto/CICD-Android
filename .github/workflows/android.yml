@@ -27,6 +27,11 @@ jobs:
 
   deploy-dev:
     runs-on: ubuntu-latest
+
+    environment:
+      name: dev
+      url: dev@dev.com
+    needs: build
     steps:
       - name: Pulish Google Play
         run: echo publishing...

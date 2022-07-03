@@ -24,3 +24,9 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew build
+
+  deploy-dev:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Pulish Google Play
+        run: echo publishing...

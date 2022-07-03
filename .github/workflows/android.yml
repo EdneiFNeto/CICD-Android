@@ -35,3 +35,15 @@ jobs:
     steps:
       - name: Pulish Google Play
         run: echo publishing...
+
+  deploy-hml:
+    runs-on: ubuntu-latest
+
+    environment:
+      name: hml
+      url: hml@hml.com
+    needs: deploy-dev
+    steps:
+      - name: Publishing Google Play
+        run: echo publishing...
+
